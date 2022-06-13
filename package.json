@@ -1,0 +1,77 @@
+{
+    "name": "onslow-college-extension-pack",
+    "displayName": "Onslow College Extension Pack",
+    "description": "Extensions needed for senior Onslow College Digital Technologies courses",
+    "version": "1.0.0",
+    "publisher": "OnslowCollege",
+    "icon": "img/onslow.png",
+    "repository": "https://github.com/OnslowCollege/ExtensionPack",
+    "engines": {
+        "vscode": "^1.79.0"
+    },
+    "categories": [
+        "Extension Packs", "Education"
+    ],
+    "keywords": [
+        "Onslow", "OC", "DIT"
+    ],
+    "extensionPack": [
+        "eamodio.gitlens",
+        "GitHub.remotehub",
+        "GitHub.vscode-pull-request-github",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.mypy-type-checker",
+        "slightc.pip-manager",
+        "sswg.swift-lang",
+        "vadimcn.vscode-lldb",
+        "ecmel.vscode-html-css",
+        "bierner.lit-html",
+        "christian-kohler.path-intellisense",
+        "pranaygp.vscode-css-peek",
+        "bierner.color-info",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.auto-rename-tag",
+        "ms-vscode.live-server",
+        "oderwat.indent-rainbow",
+        "usernamehw.errorlens",
+        "aaron-bond.better-comments",
+        "bierner.docs-view",
+        "yzhang.markdown-all-in-one",
+        "bierner.github-markdown-preview",
+        "bierner.markdown-preview-github-styles",
+        "bierner.markdown-checkbox",
+        "bierner.markdown-emoji",
+        "bierner.markdown-footnotes",
+        "DavidAnson.vscode-markdownlint",
+        "hediet.vscode-drawio"
+    ],
+    "contributes": {
+        "configurationDefaults": {
+            "gitlens.showWhatsNewAfterUpgrades": false,
+            "gitlens.showWelcomeOnInstall": false,
+            "python.linting.enabled": true,
+            "python.linting.pycodestyleEnabled": true,
+            "python.linting.pydocstyleEnabled": true,
+            "python.linting.pydocstyleArgs": [
+                "--convention=pep257"
+            ],
+            "python.linting.mypyEnabled": true,
+            "python.linting.mypyArgs": [
+                "--strict",
+                "--follow-imports=silent",
+                "--ignore-missing-imports",
+                "--show-column-numbers",
+                "--pretty"
+            ],
+            "workbench.colorTheme": "Default Light Modern",
+            "debug.console.fontSize": 16,
+            "editor.wordWrap": "on",
+            "editor.fontSize": 16,
+            "editor.formatOnSave": true,
+            "editor.formatOnSaveMode": "modificationsIfAvailable",
+            "editor.formatOnType": true
+        }
+    }
+}
