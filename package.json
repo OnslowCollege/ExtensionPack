@@ -2,7 +2,7 @@
     "name": "onslow-college-extension-pack",
     "displayName": "Onslow College Extension Pack",
     "description": "Extensions needed for senior Onslow College Digital Technologies courses",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "OnslowCollege",
     "icon": "img/onslow.png",
     "repository": "https://github.com/OnslowCollege/ExtensionPack",
