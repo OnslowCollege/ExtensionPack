@@ -30,7 +30,30 @@ This extension pack contains all of the packages necessary for Digital Technolog
 "editor.fontSize": 16,
 "editor.formatOnSave": true,
 "editor.formatOnSaveMode": "modificationsIfAvailable",
-"editor.formatOnType": true
+"editor.formatOnType": true,
+"editor.rulers": [
+    80
+],
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "scope": "string.quoted.docstring.multi.python",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "scope": "comment",
+            "settings": {
+                "fontStyle": "italic"
+            }
+        }
+    ]
+},
+"AREPL.telemetry": false,
+"AREPL.skipLandingPage": true,
+"AREPL.showFooter": false,
+"pip-manager.source": "pypi"
 ```
 
 ## Extensions included
@@ -46,6 +69,8 @@ This extension pack contains all of the packages necessary for Digital Technolog
 - Python extension
 - Pylance
 - Pip Manager
+- AREPL for Python
+- autoDocstring
 
 ## Swift integration (13DTC with Matua Doc)
 
