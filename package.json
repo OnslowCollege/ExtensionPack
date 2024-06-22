@@ -1,8 +1,8 @@
 {
     "name": "onslow-college-extension-pack",
     "displayName": "Onslow College Extension Pack",
-    "description": "Extensions needed for senior Onslow College Digital Technologies courses",
-    "version": "1.1.0",
+    "description": "Extensions and settings for Onslow College — Ētahi toronga/tautuhinga mō te Kura Tuarua o Tarikākā",
+    "version": "1.3.0",
     "publisher": "OnslowCollege",
     "icon": "img/onslow.png",
     "repository": "https://github.com/OnslowCollege/ExtensionPack",
@@ -10,70 +10,115 @@
         "vscode": "^1.79.0"
     },
     "categories": [
-        "Extension Packs", "Education"
+        "Extension Packs",
+        "Education"
     ],
     "keywords": [
-        "Onslow", "OC", "DIT"
+        "Onslow",
+        "OC",
+        "DIT",
+        "Tarikaka"
     ],
     "extensionPack": [
-        "eamodio.gitlens",
-        "GitHub.remotehub",
-        "GitHub.vscode-pull-request-github",
-        "ms-python.python",
-        "ms-python.vscode-pylance",
-        "ms-python.mypy-type-checker",
-        "slightc.pip-manager",
-        "almenon.arepl",
-        "njpwerner.autodocstring",
-        "sswg.swift-lang",
-        "vadimcn.vscode-lldb",
-        "ecmel.vscode-html-css",
-        "bierner.lit-html",
-        "christian-kohler.path-intellisense",
-        "pranaygp.vscode-css-peek",
-        "bierner.color-info",
-        "formulahendry.auto-close-tag",
-        "formulahendry.auto-complete-tag",
-        "formulahendry.auto-rename-tag",
-        "ms-vscode.live-server",
-        "oderwat.indent-rainbow",
-        "usernamehw.errorlens",
         "aaron-bond.better-comments",
+        "almenon.arepl",
+        "bierner.color-info",
         "bierner.docs-view",
-        "yzhang.markdown-all-in-one",
         "bierner.github-markdown-preview",
-        "bierner.markdown-preview-github-styles",
+        "bierner.lit-html",
         "bierner.markdown-checkbox",
         "bierner.markdown-emoji",
         "bierner.markdown-footnotes",
-        "DavidAnson.vscode-markdownlint",
-        "hediet.vscode-drawio"
+        "bierner.markdown-preview-github-styles",
+        "charliermarsh.ruff",
+        "christian-kohler.path-intellisense",
+        "cmoog.sqlnotebook",
+        "cs50.vscode-presentation-mode",
+        "davidanson.vscode-markdownlint",
+        "eamodio.gitlens",
+        "ecmel.vscode-html-css",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-complete-tag",
+        "formulahendry.auto-rename-tag",
+        "github.remotehub",
+        "github.vscode-pull-request-github",
+        "gruntfuggly.todo-tree",
+        "kevinrose.vsc-python-indent",
+        "ms-dotnettools.csdevkit",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.vscode-typescript-next",
+        "oderwat.indent-rainbow",
+        "pranaygp.vscode-css-peek",
+        "redhat.java",
+        "ritwickdey.LiveServer",
+        "seunlanlege.action-buttons",
+        "slightc.pip-manager",
+        "sswg.swift-lang",
+        "tldraw-org.tldraw-vscode",
+        "tomoki1207.pdf",
+        "usernamehw.errorlens",
+        "vadimcn.vscode-lldb",
+        "vknabel.vscode-apple-swift-format",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven",
+        "vsls-contrib.gitdoc",
+        "yzhang.markdown-all-in-one"
     ],
     "contributes": {
         "configurationDefaults": {
-            "gitlens.showWhatsNewAfterUpgrades": false,
-            "gitlens.showWelcomeOnInstall": false,
-            "python.linting.enabled": true,
-            "python.linting.pycodestyleEnabled": true,
-            "python.linting.pydocstyleEnabled": true,
-            "python.linting.pydocstyleArgs": [
-                "--convention=pep257"
-            ],
-            "python.linting.mypyEnabled": true,
-            "python.linting.mypyArgs": [
-                "--strict",
-                "--follow-imports=silent",
-                "--ignore-missing-imports",
-                "--show-column-numbers",
-                "--pretty"
-            ],
+            "actionButtons": {
+                "commands": [
+                    {
+                        "cwd": "${workspaceFolder}",
+                        "name": "$(run) Run File",
+                        "useVsCodeApi": true,
+                        "command": "workbench.action.debug.start"
+                    },
+                    {
+                        "cwd": "{workspaceFolder}",
+                        "name": "$(pencil) Fix Formatting",
+                        "useVsCodeApi": true,
+                        "command": "editor.action.formatDocument"
+                    },
+                    {
+                        "name": "$(terminal-view-icon) New Terminal",
+                        "useVsCodeApi": true,
+                        "command": "workbench.action.terminal.newInActiveWorkspace"
+                    },
+                    {
+                        "name": "$(terminal-kill) Kill All",
+                        "useVsCodeApi": true,
+                        "command": "workbench.action.terminal.killAll"
+                    },
+                    {
+                        "name": "$(eye) Doc Mode",
+                        "useVsCodeApi": true,
+                        "command": "presentation-mode.toggle"
+                    }
+                ],
+                "defaultColor": "none",
+                "reloadButton": "↻",
+                "loadNpmCommands": false
+            },
+            "AREPL.telemetry": false,
+            "AREPL.skipLandingPage": true,
+            "AREPL.showFooter": false,
             "editor.wordWrap": "on",
             "editor.fontSize": 16,
             "editor.formatOnSave": true,
             "editor.formatOnSaveMode": "modificationsIfAvailable",
             "editor.formatOnType": true,
+            "[python]": {
+                "editor.rulers": [
+                    80
+                ]
+            },
             "editor.rulers": [
-                80
+                120
             ],
             "editor.tokenColorCustomizations": {
                 "textMateRules": [
@@ -91,10 +136,45 @@
                     }
                 ]
             },
-            "AREPL.telemetry": false,
-            "AREPL.skipLandingPage": true,
-            "AREPL.showFooter": false,
-            "pip-manager.source": "pypi"
+            "gitdoc.commitValidationLevel": "none",
+            "gitdoc.enabled": true,
+            "gitlens.showWhatsNewAfterUpgrades": false,
+            "gitlens.showWelcomeOnInstall": false,
+            "javascript.suggest.paths": false,
+            "pip-manager.source": "pypi",
+            "presentation-mode.active": {
+                "commands": [
+                    "workbench.action.closeSidebar"
+                ],
+                "editor.fontSize": 24,
+                "editor.matchBrackets": "never",
+                "editor.minimap.enabled": false,
+                "editor.scrollbar.verticalScrollbarSize": 0,
+                "workbench.activityBar.visible": false,
+                "workbench.statusBar.visible": false,
+                "workbench.colorTheme": "Default Light Modern",
+                "workbench.colorCustomizations": {
+                    "[Default Light Modern]": {
+                        "activityBar.background": "#fff",
+                        "editor.background": "#fff",
+                        "editor.lineHighlightBackground": "#fff0",
+                        "editor.lineHighlightBorder": "#fff0",
+                        "editorWhitespace.foreground": "#1167D7",
+                        "panel.background": "#fff",
+                        "sideBar.background": "#fff",
+                        "terminal.background": "#fff"
+                    }
+                },
+                "window.zoomLevel": 2
+            },
+            "presentation-mode.inactive": {
+                "commands": [
+                    "workbench.action.focusSideBar"
+                ]
+            },
+            "ruff.importStrategy": "useBundled",
+            "terminal.integrated.fontSize": 16,
+            "typescript.suggest.paths": false
         }
     }
 }
