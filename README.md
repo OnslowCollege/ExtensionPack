@@ -2,7 +2,7 @@
 
 ![Onslow College Logo](img/onslow.png)
 
-Kei roto i tēnei kohinga toronga katoa me ngā tautuhinga taunoa e tika ana mō ngā karaehe Hangarau Matihiko i [te Kura Tuarua o Tarikākā](https://www.onslow.school.nz/).
+Kei roto i tēnei kohinga toronga ngā toronga katoa me ngā tautuhinga taunoa e tika ana mō ngā karaehe Hangarau Matihiko i [te Kura Tuarua o Tarikākā](https://www.onslow.school.nz/).
 
 This extension pack contains all of the packages necessary for Digital Technologies at [Onslow College](https://www.onslow.school.nz/).
 
