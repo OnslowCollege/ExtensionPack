@@ -2,104 +2,25 @@
 
 ![Onslow College Logo](img/onslow.png)
 
+Kei roto i tēnei kohinga toronga katoa me ngā tautuhinga taunoa e tika ana mō ngā karaehe Hangarau Matihiko i [te Kura Tuarua o Tarikākā](https://www.onslow.school.nz/).
+
 This extension pack contains all of the packages necessary for Digital Technologies at [Onslow College](https://www.onslow.school.nz/).
 
-## Setup
+----
 
-1. Install this extension pack.
-2. Show the Command Palette (View menu → Command Palette, or (Ctrl/Cmd)-Shift-P
-3. Type "user settings", then select User Settings (JSON)
-4. Copy-paste the following settings into the JSON
+## Language support
 
-```json
-"python.linting.enabled": true,
-"python.linting.pycodestyleEnabled": true,
-"python.linting.pydocstyleEnabled": true,
-"python.linting.pydocstyleArgs": [
-    "--convention=pep257"
-],
-"python.linting.mypyEnabled": true,
-"python.linting.mypyArgs": [
-    "--strict",
-    "--follow-imports=silent",
-    "--ignore-missing-imports",
-    "--show-column-numbers",
-    "--pretty"
-],
-"editor.wordWrap": "on",
-"editor.fontSize": 16,
-"editor.formatOnSave": true,
-"editor.formatOnSaveMode": "modificationsIfAvailable",
-"editor.formatOnType": true,
-"editor.rulers": [
-    80
-],
-"editor.tokenColorCustomizations": {
-    "textMateRules": [
-        {
-            "scope": "string.quoted.docstring.multi.python",
-            "settings": {
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "scope": "comment",
-            "settings": {
-                "fontStyle": "italic"
-            }
-        }
-    ]
-},
-"AREPL.telemetry": false,
-"AREPL.skipLandingPage": true,
-"AREPL.showFooter": false,
-"pip-manager.source": "pypi"
-```
+- C and C++ (`.c`, `.h`; `.cpp`, `.hpp`)
+- C# (`.cs`)
+- Java (`.java`)
+- Python (`.py`)
+  - **AREPL** allows you to run Python snippets and visualise the results
+- Swift (`.swift`)
 
-## Extensions included
+## File format support
 
-### GitHub integration
-
-- GitHub Repositories
-- GitHub Pull Requests and Issues
-- GitLens
-
-## Python integration
-
-- Python extension
-- Pylance
-- Pip Manager
-- AREPL for Python
-- autoDocstring
-
-## Swift integration (13DTC with Matua Doc)
-
-- Swift
-- CodeLLDB
-
-## Web development tools
-
-- HTML CSS Support
-- lit-html
-- Path Intellisense
-- CSS Peek
-- Color Info
-- Auto Close Tag
-- Auto Complete Tag
-- Auto Rename Tag
-- Live Preview
-
-## General tools
-
-- Indent Rainbow
-- Error Lens
-- Better Comments
-- Docs View
-- Markdown All-in-One
-- GitHub Markdown Preview
-- Markdown Preview Github Styling
-- Markdown Checkboxes
-- Markdown Emoji
-- Markdown Footnotes
-- markdownlint
-- Draw.io integration
+- Markdown (`.md`)
+- SQL files (`.sql`)
+- tldraw.org files (`.tldr`)
+- draw.io files (`.drawio`)
+- PDF files
