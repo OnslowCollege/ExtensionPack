@@ -8,7 +8,6 @@
         "workbench.statusBar.visible": "undefined",
         "workbench.colorTheme": "undefined",
         "workbench.colorCustomizations": "undefined",
-        "window.zoomLevel": "undefined",
-        "actionButtons": "undefined"
+        "window.zoomLevel": "undefined"
     }
 }

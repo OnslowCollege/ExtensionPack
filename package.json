@@ -2,12 +2,12 @@
     "name": "onslow-college-extension-pack",
     "displayName": "Onslow College Extension Pack",
     "description": "Extensions and settings for Onslow College — Ētahi toronga/tautuhinga mō te Kura Tuarua o Tarikākā",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "publisher": "OnslowCollege",
     "icon": "img/onslow.png",
     "repository": "https://github.com/OnslowCollege/ExtensionPack",
     "engines": {
-        "vscode": "^1.79.0"
+        "vscode": "^1.90.0"
     },
     "categories": [
         "Extension Packs",
