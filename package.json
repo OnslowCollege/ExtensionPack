@@ -74,28 +74,28 @@
                 "commands": [
                     {
                         "cwd": "${workspaceFolder}",
-                        "name": "$(run) Run File",
+                        "name": "$(run)",
                         "useVsCodeApi": true,
                         "command": "workbench.action.debug.start"
                     },
                     {
                         "cwd": "{workspaceFolder}",
-                        "name": "$(pencil) Fix Formatting",
+                        "name": "$(pencil)",
                         "useVsCodeApi": true,
                         "command": "editor.action.formatDocument"
                     },
                     {
-                        "name": "$(terminal-view-icon) New Terminal",
+                        "name": "$(terminal-view-icon)",
                         "useVsCodeApi": true,
                         "command": "workbench.action.terminal.newInActiveWorkspace"
                     },
                     {
-                        "name": "$(terminal-kill) Kill All",
+                        "name": "$(terminal-kill)",
                         "useVsCodeApi": true,
                         "command": "workbench.action.terminal.killAll"
                     },
                     {
-                        "name": "$(eye) Doc Mode",
+                        "name": "$(eye)",
                         "useVsCodeApi": true,
                         "command": "presentation-mode.toggle"
                     }
@@ -151,7 +151,7 @@
                 "editor.minimap.enabled": false,
                 "editor.scrollbar.verticalScrollbarSize": 0,
                 "workbench.activityBar.visible": false,
-                "workbench.statusBar.visible": false,
+                "workbench.statusBar.visible": true,
                 "workbench.colorTheme": "Default Light Modern",
                 "workbench.colorCustomizations": {
                     "[Default Light Modern]": {
@@ -174,7 +174,8 @@
             },
             "ruff.importStrategy": "useBundled",
             "terminal.integrated.fontSize": 16,
-            "typescript.suggest.paths": false
+            "typescript.suggest.paths": false,
+            "workbench.colorTheme": "Tomorrow Night Blue"
         }
     }
 }
