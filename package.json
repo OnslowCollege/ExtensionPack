@@ -40,6 +40,7 @@
         "formulahendry.auto-close-tag",
         "formulahendry.auto-complete-tag",
         "formulahendry.auto-rename-tag",
+        "github.codespaces",
         "github.remotehub",
         "github.vscode-pull-request-github",
         "gruntfuggly.todo-tree",
