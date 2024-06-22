@@ -10,58 +10,5 @@
         "workbench.colorCustomizations": "undefined",
         "window.zoomLevel": "undefined",
         "actionButtons": "undefined"
-    },
-    "editor.fontSize": 24,
-    "editor.matchBrackets": "never",
-    "editor.minimap.enabled": false,
-    "editor.scrollbar.verticalScrollbarSize": 0,
-    "workbench.statusBar.visible": true,
-    "workbench.colorTheme": "Default Light Modern",
-    "workbench.colorCustomizations": {
-        "[Default Light Modern]": {
-            "activityBar.background": "#fff",
-            "editor.background": "#fff",
-            "editor.lineHighlightBackground": "#fff0",
-            "editor.lineHighlightBorder": "#fff0",
-            "editorWhitespace.foreground": "#1167D7",
-            "panel.background": "#fff",
-            "sideBar.background": "#fff",
-            "terminal.background": "#fff"
-        }
-    },
-    "window.zoomLevel": 2,
-    "actionButtons": {
-        "commands": [
-            {
-                "cwd": "${workspaceFolder}",
-                "name": "$(run)",
-                "useVsCodeApi": true,
-                "command": "workbench.action.debug.start"
-            },
-            {
-                "cwd": "{workspaceFolder}",
-                "name": "$(pencil)",
-                "useVsCodeApi": true,
-                "command": "editor.action.formatDocument"
-            },
-            {
-                "name": "$(terminal-view-icon)",
-                "useVsCodeApi": true,
-                "command": "workbench.action.terminal.newInActiveWorkspace"
-            },
-            {
-                "name": "$(terminal-kill)",
-                "useVsCodeApi": true,
-                "command": "workbench.action.terminal.killAll"
-            },
-            {
-                "name": "$(eye)",
-                "useVsCodeApi": true,
-                "command": "presentation-mode.toggle"
-            }
-        ],
-        "defaultColor": "none",
-        "reloadButton": "↻",
-        "loadNpmCommands": false
     }
 }
