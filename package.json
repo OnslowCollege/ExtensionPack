@@ -74,28 +74,28 @@
                 "commands": [
                     {
                         "cwd": "${workspaceFolder}",
-                        "name": "$(run)",
+                        "name": "$(run) Run File",
                         "useVsCodeApi": true,
                         "command": "workbench.action.debug.start"
                     },
                     {
                         "cwd": "{workspaceFolder}",
-                        "name": "$(pencil)",
+                        "name": "$(pencil) Format",
                         "useVsCodeApi": true,
                         "command": "editor.action.formatDocument"
                     },
                     {
-                        "name": "$(terminal-view-icon)",
+                        "name": "$(terminal-view-icon) New Terminal",
                         "useVsCodeApi": true,
                         "command": "workbench.action.terminal.newInActiveWorkspace"
                     },
                     {
-                        "name": "$(terminal-kill)",
+                        "name": "$(terminal-kill) Kill All Terminals",
                         "useVsCodeApi": true,
                         "command": "workbench.action.terminal.killAll"
                     },
                     {
-                        "name": "$(eye)",
+                        "name": "$(eye) Enter Doc Mode",
                         "useVsCodeApi": true,
                         "command": "presentation-mode.toggle"
                     }
